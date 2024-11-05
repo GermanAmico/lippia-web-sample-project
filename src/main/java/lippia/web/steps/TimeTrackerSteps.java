@@ -25,8 +25,8 @@ public class TimeTrackerSteps extends PageSteps {
         TimeTrackerService.createNewProject();
     }
 
-    @And("El usuario ingresa nombre (.*)")
-    public void elUsuarioIngresaNombrePrueba1(String name) {
+    @And("l usuario ingresa nombre '(.*)'")
+    public void elUsuarioIngresaNombre(String name) {
         TimeTrackerService.setName(name);
 
     }
@@ -61,6 +61,7 @@ public class TimeTrackerSteps extends PageSteps {
 
         TimeTrackerService.createNewWorkSpace();
     }
+
 
 
 }

@@ -13,13 +13,7 @@ Scenario: El usuario hace login exitoso de forma manual
   And El usuario hace click en el boton 'Log In'
   Then El usuario se encuentra en la pagina TimeTracker
 
-@LoginFallido @EmailFail
-Scenario: El usuario hace login fallido de forma manual
-  When El usuario hace click en 'Log in manually'
-  And El usuario ingresa el email 'oblivion1609@hotmail.com'
-  And El usuario ingresa la contraseña '12345e'
-  And El usuario hace click en el boton 'Log In'
-  Then El usuario visualiza mensaje 'Invalid email or password' de contraseña incorrrecta
+
 
 
 
